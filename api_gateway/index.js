@@ -4,12 +4,14 @@ const PORT = 3000;
 const app = express();
 const amqp = require('amqplib/callback_api');
 
+const o = 'ORDER'
+
 const messageBrokerInfo = {
     exchanges: {
         order: 'order_exchange'
     },
     routingKeys: {
-        createOrder: 'create_order'
+        createOrder: 'orders'
     }
 }
 
@@ -22,7 +24,7 @@ const createMessageBrokerConnection = () => new Promise((resolve, reject) => {
 
 const createChannel = connection => new Promise((resolve, reject) => {
     connection.createChannel((err, channel) => {
-        if (err) { reject(err); }
+       if (err) { reject(err); }
         resolve(channel);
     });
 });
@@ -45,6 +47,19 @@ const configureMessageBroker = channel => {
     app.use(bodyParser.json());
 
     // TODO: Setup route
+    app.post('/api/orders/', (req, res) =>{ 
+
+        const { body } = req
+        const bodyJson = JSON.stringify(body)
+
+        channel.publish(order, 
+                        createOrder,
+                        new Buffer(bodyJson))
+
+        return res
+                .status(200)
+                .send("o r d e r        p l  a c e d ")
+    })
 
     app.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));
 })().catch(e => console.error(e));
