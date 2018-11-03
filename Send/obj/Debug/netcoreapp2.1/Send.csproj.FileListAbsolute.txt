@@ -1,0 +1,11 @@
+D:\DocumentsLocal\Vefþjónustur\CactusHell\Send\bin\Debug\netcoreapp2.1\Send.deps.json
+D:\DocumentsLocal\Vefþjónustur\CactusHell\Send\bin\Debug\netcoreapp2.1\Send.runtimeconfig.json
+D:\DocumentsLocal\Vefþjónustur\CactusHell\Send\bin\Debug\netcoreapp2.1\Send.runtimeconfig.dev.json
+D:\DocumentsLocal\Vefþjónustur\CactusHell\Send\bin\Debug\netcoreapp2.1\Send.dll
+D:\DocumentsLocal\Vefþjónustur\CactusHell\Send\bin\Debug\netcoreapp2.1\Send.pdb
+D:\DocumentsLocal\Vefþjónustur\CactusHell\Send\obj\Debug\netcoreapp2.1\Send.csprojAssemblyReference.cache
+D:\DocumentsLocal\Vefþjónustur\CactusHell\Send\obj\Debug\netcoreapp2.1\Send.csproj.CoreCompileInputs.cache
+D:\DocumentsLocal\Vefþjónustur\CactusHell\Send\obj\Debug\netcoreapp2.1\Send.AssemblyInfoInputs.cache
+D:\DocumentsLocal\Vefþjónustur\CactusHell\Send\obj\Debug\netcoreapp2.1\Send.AssemblyInfo.cs
+D:\DocumentsLocal\Vefþjónustur\CactusHell\Send\obj\Debug\netcoreapp2.1\Send.dll
+D:\DocumentsLocal\Vefþjónustur\CactusHell\Send\obj\Debug\netcoreapp2.1\Send.pdb
